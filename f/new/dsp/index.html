@@ -1,0 +1,93 @@
+<style>
+.container{
+  width: 900px;
+  margin: 0 auto;
+}
+.card{
+  /* 設定父親定位點 */
+  position: relative;
+  width: 270px;
+  float:left;
+  margin: 10px;
+}
+img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.info{
+/*   display: none; */
+  opacity: 0;
+  position: absolute;
+  box-sizing: border-box;
+  background-color: rgba(0,0,0,.3);
+  top: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding-top: 40px;
+  -webkit-transition:.5s ease-out;
+  
+}
+.info p{
+  color: #fff;
+}
+.info:hover{
+/*   -webkit-transition: 500ms; */
+  margin-top: 0;
+  opacity: 1;  
+}
+
+.flex-nav {
+    display: flex;
+    justify-content: center;
+}
+
+.inline-block-nav {
+    text-align: center;
+    font-size: 0;   /* 移除 <li> 之間的空隙 */
+}
+
+.inline-block-nav > li {
+    display: inline-block;
+}
+
+
+
+
+
+</style>
+<head>
+    <meta charset="utf-8">
+
+</head>
+
+<nav>
+
+    <div class="container">
+        <div class="card">
+          <img src="https://lh6.googleusercontent.com/i2_5S7wcYmxSJA1HnaaGn-GDqWos5hmB93zSYW_KpxNrsLGyqBUGEToO5MHhxLX5c4y7RqdXnlr-lqUaPawQL9mrAOP4GMP659bcJpx4TAo9LrrU0drcfVCqCmiUrLHyTg=w225" alt="">
+          <div class="info">
+            <a href="https://www.tiktok.com/@abohp_new?is_copy_url=1&is_from_webapp=v1&lang=zh-Hant-TW" target="_blank">打开</a>
+            <p>tiktok</p>
+          </div>
+        </div>
+        <div class="container">
+            <div class="card">
+              <img src="https://lh4.googleusercontent.com/HzzMEZ_4xDWlqthdO1tC7oRWZt2d98MlFZV2JuVfkKq9YbVsnAdHqz6T5nEh-bsATs8IaKQ1ufXGWXTclOBrmBN5Nbac6SGcEh7pPGT9VF6ojp76pG5c6Ts_pVZUwBpB_A=w225" alt="">
+              <div class="info">
+                <a href="https://www.douyin.com/user/MS4wLjABAAAAoqWg5Cj9CL5TZECxeyWX7hUQtKs6YHD2ksDvDo6JWop9RujRhKAV4VMXoequMxon?enter_from=recommend&enter_method=top_bar" target="_blank">打开</a>
+                <p>抖音</p>
+              </div>
+            </div>
+            <div class="container">
+                <div class="card">
+                  <img src="https://lh4.googleusercontent.com/lYstDEkyqPzRPZMnla9p1JI4-_8VdPRgmrEe3ipAA2_X12Oo6nTBDXh6TFpdMRlGebJz_mBL6_GwmUtEQiSZV2d23Zk-DQ6-I-uJfD6TS19NHh1V3RAqoXfhE4GMwSi0uA=w3590" alt="">
+                  <div class="info">
+                    <a href="https://www.youtube.com/channel/UCw6nx7tiPRKQ6aiL__AbUdw" target="_blank">打开</a>
+                    <p>youtube</p>
+                  </div>
+                </div>
+
+  </div>
+</nav>
