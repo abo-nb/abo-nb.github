@@ -36,6 +36,7 @@ function login(){
     var errorMessage = error.message;
 
     window.alert("Error : " + errorMessage);
+    console.log(errorMessage)
 
     // ...
   });
