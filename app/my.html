@@ -1,0 +1,99 @@
+<style>
+    body
+    {
+        background: linear-gradient(to left top,red,blue);
+    }
+    .main{
+        text-align: center; /*让div内部文字居中*/
+        width: 300px;
+        height: 300px;
+        margin: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    
+    .bu {
+      background-color: #4CAF50; /* Green */
+      border-radius: 20px;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
+    
+    nav{
+            width: 99%;
+            height: 60xp;	
+            background: rgba(0,0,0,.3);
+            position: absolute;
+            z-index: 10;
+            border-radius: 25px;
+        }
+        nav ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            border-radius: 20px;
+        }
+        nav ul li{
+            text-align: center;
+            float: left;
+            line-height: 60px;
+            border-radius: 20px;
+        }
+    
+        
+        nav ul li a{
+            width: 100px;
+            color: #fff;
+            font-size: 20xp;
+            font-weight: 600;
+            display: block;
+        }
+        nav ul li a:hover,nav ul li a:visited{
+            text-decoration: none;
+            background: rgba(0,0,0,.5);
+            color: #fff;
+        }
+        .words{font-size: 40px;
+                letter-spacing: 10px;
+                position: absolute;
+                top:50%;
+                left: 30%;}
+        .imgw{position: relative;}
+    
+    </style>
+    <head>
+        <title>摸鱼神器</title>
+    </head>
+    <body>
+        <div>
+            <nav>
+                <ul>
+                    <li class="active"><a href="../index.html">首頁</a></li>
+                    <li><a href="../hub.html">仓库</a></li>
+                    
+                </ul>
+            </nav>
+            </div>
+            <div>
+                <div class="main">
+                    <img src="img/logo.svg" alt="logo" width="160" height="160">
+                    <p>暂无图片</p>
+                    <h1>摸鱼神器-辅助摸鱼神器</h1>
+                    <h3>操作说明</h3>
+                    <p>"Alt + A" 隐藏/显示</p>
+                    <p>"Alt + Q" 显示于最上层-失效时使用</p>
+                    <p>"Alt + V" 重起软件</p>
+                    
+                    
+                    <input class="bu" value="下载"  style="width:150px;height:40px;font-size:20px type="button" onclick="location.href='hub.html'">
+                </div>
+            </div>
+    </body>

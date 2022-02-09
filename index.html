@@ -1,144 +1,107 @@
-<head> 
-<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
-<meta name="google-site-verification" content="hf1TGucaSCn52ypY8-c8QIApZ4n-lmHpQbzeVDsjOUc" />
-  <style>
-.button {
-	display: inline-block;
-	cursor: pointer;
-	text-align: center;
-	text-decoration: none;
-	padding: .5em 2em .55em;
-	text-shadow: 0 1px 1px rgba(0,0,0,.3);
-	border-radius: .5em;
-	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
-	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
-	box-shadow: 0 1px 2px rgba(0,0,0,.2);
-	-webkit-border-radius: 2em;
-	-moz-border-radius: 2em;
-	border-radius: 2em;
-	color: #d9eef7;
-	border: solid 1px #0076a3;
-	background: #0095cd;
-	background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));
-	background: -moz-linear-gradient(top,  #00adee,  #0078a5);
-	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#00adee', endColorstr='#0078a5');
+<style>
+body
+{
+	background: linear-gradient(to left top,red,blue);
 }
-.button:hover {
-	text-decoration: none;
-	background: #007ead;
-	background: -webkit-gradient(linear, left top, left bottom, from(#0095cc), to(#00678e));
-	background: -moz-linear-gradient(top,  #0095cc,  #00678e);
-	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#0095cc', endColorstr='#00678e');
+.main{
+	text-align: center; /*让div内部文字居中*/
+	width: 300px;
+	height: 300px;
+	margin: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
 }
-.button:active {
-	position: relative;
-	top: 1px;
-	color: #80bed6;
-	background: -webkit-gradient(linear, left top, left bottom, from(#0078a5), to(#00adee));
-	background: -moz-linear-gradient(top,  #0078a5,  #00adee);
-	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#0078a5', endColorstr='#00adee');
-}
-html,body {
-	margin-top: 0px;
-        margin-right: 0px;
-        margin-bottom: 0px;
-        margin-left: 0px;
-	font-family: OPPOSans M,Microsoft Yahei Light,Microsoft Yahei,PingFangSC-Regular;
-        height: 100%;
-	text-align: center;
-	background: url("barj.svg")  left top / cover no-repeat fixed;
-}
-.center {
-    width: 300px;
-    height: 200px;
-    position: relative;
-    left: 50%;
-    margin-left: -150px;
-    top: 50%;
-    margin-top: -150px;
-}
-</style> 
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
-  <title>xu_星云</title> 
-  <script type="text/javascript" src="loginform.js"></script>
-  <script type="text/javascript" src="sf.js"></script>
 
- </head>
- 
+.bu {
+  background-color: #4CAF50; /* Green */
+  border-radius: 20px;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.bu2 {
+  background-color: #4c924e; /* Green */
+  border-radius: 20px;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+nav{
+		width: 99%;
+		height: 60xp;	
+		background: rgba(0,0,0,.3);
+		position: absolute;
+		z-index: 10;
+        border-radius: 25px;
+	}
+	nav ul{
+		list-style: none;
+		margin: 0;
+		padding: 0;
+        border-radius: 20px;
+	}
+	nav ul li{
+		text-align: center;
+		float: left;
+		line-height: 60px;
+        border-radius: 20px;
+	}
+
+    
+    nav ul li a{
+		width: 100px;
+		color: #fff;
+		font-size: 20xp;
+		font-weight: 600;
+		display: block;
+	}
+	nav ul li a:hover,nav ul li a:visited{
+		text-decoration: none;
+		background: rgba(0,0,0,.5);
+		color: #fff;
+	}
+	.words{font-size: 40px;
+			letter-spacing: 10px;
+			position: absolute;
+			top:50%;
+			left: 30%;}
+	.imgw{position: relative;}
+
+</style>
 <head>
-<link rel="stylesheet" href="sf.css" type="text/css">
-<ul>
-       <nav>
-            <ul class="flex-nav">
-				<li><a href="javascript:home();">home</a></li>
-                <li><a href="javascript:gy();">關於</a></li>
-                <li><a href="javascript:dsp();">视频平台</a></li>
-				<li><a href="javascript:zy();">资源</a></li>
-								<li><a href="https://github.com/abo-nb">github</a></li>
-				<button class="button" onclick="loginf()">登入界面</button>
-				<p id="webname"></p>
-				
-
-            </ul
-        </nav>
-		<div style="visibility: visible;" id="loginformf" name=>
-			<html>
-				<head>
-				  
-				<meta charset="UTF-8">
-				  <title>登入</title>
-				  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
-				  <link rel="stylesheet" href="style.css" />
-				</head>
-				<body>
-				
-				  <div id="login_div" class="main-div">
-					<h3>登入</h3>
-					<input type="email" placeholder="电子邮件" id="email_field" />
-					<input type="password" placeholder="密码" id="password_field" />
-				
-					<button onclick="login()">登入</button>
-					<button onclick="reg()">注册</button>
-				  </div>
-				
-				  <div id="user_div" class="loggedin-div">
-					<h3>欢迎!</h3>
-					<p id="user_para">登入</p>
-					<button onclick="logout()">登出</button>
-				  </div>
-				
-				  
-				
-				
-				
-				  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
-				  <script>
-					// Initialize Firebase
-					var config = {
-					  apiKey: "AIzaSyABSQaHT0Avg8elUYciG0jtTKmi8OLjohE",
-					authDomain: "weblogin-4906f.firebaseapp.com",
-					databaseURL: "https://weblogin-4906f-default-rtdb.firebaseio.com",
-					projectId: "weblogin-4906f",
-					storageBucket: "weblogin-4906f.appspot.com",
-					messagingSenderId: "807596385116",
-					appId: "1:807596385116:web:b6c5db5e79f2fafa665799",
-					measurementId: "G-2H1R13TXY6"
-					};
-					firebase.initializeApp(config);
-				  </script>
-				  <script src="index.js"></script>
-				
-				</body>
-				</html>
-				
-
-
-
-		</div>
+    <title>主页</title>
 </head>
-<head>
-<iframe id="nr" src="f\new\home" width="100%" height="100%" frameborder="0" </iframe>
-	 
+<body>
+    <div>
+    <nav>
+		<ul>
+			<li class="active"><a href="index.html">首頁</a></li>
+            <li><a href="hub.html">仓库</a></li>
+            <li><a href="https://www.tiktok.com/@abohp_new?is_copy_url=1&is_from_webapp=v1&lang=zh-Hant-TW">tiktok</a></li>
+            <li><a href="https://www.douyin.com/user/MS4wLjABAAAAoqWg5Cj9CL5TZECxeyWX7hUQtKs6YHD2ksDvDo6JWop9RujRhKAV4VMXoequMxon?enter_from=recommend&enter_method=top_bar">抖音</a></li>
+            
+		</ul>
+	</nav>
+    </div>
 
-
-	 </head>
+    <div class="bg"></div>
+    <div class="main">
+		<h1>欢迎来到xu星云</h1>
+        <h2>不定期发布内容</h2>
+        <input class="bu" value="前往作品库"  style="width:150px;height:40px;font-size:20px type="button" onclick="location.href='hub.html'">
+        <input class="bu2" value="前往旧页面"  style="width:150px;height:40px; type="button" onclick="location.href='jio/'">
+	</div>
+</body>
