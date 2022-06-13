@@ -1,5 +1,5 @@
 <style>
-body
+    body
 {
  background: linear-gradient(125deg,#2c3e50,#27ae60,#2980b9,#e74c3c,#8e44ad);
      /* 初始化 取消内外边距 */
@@ -29,10 +29,11 @@ body
         background-position: 0% 50%;
     }
 }
+
 .main{
 	text-align: center; /*让div内部文字居中*/
 	width: 300px;
-	height: 300px;
+	height: 100px;
 	margin: auto;
 	position: absolute;
 	top: 0;
@@ -41,93 +42,49 @@ body
 	bottom: 0;
 }
 
-.bu {
-  background-color: #4CAF50; /* Green */
-  border-radius: 20px;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
+a:link { 
+color:#000000; 
+text-decoration:underline; 
+} 
+a:visited { 
+color:#000000; 
+text-decoration:none; 
+} 
+a:hover { 
+color:#000000; 
+text-decoration:none; 
+} 
+a:active { 
+color:#000000; 
+text-decoration:none; 
 }
-
-.bu2 {
-  background-color: #4c924e; /* Green */
-  border-radius: 20px;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-}
-
-nav{
-		width: 99%;
-		height: 60xp;	
-		background: rgba(0,0,0,.3);
-		position: absolute;
-		z-index: 10;
-        border-radius: 25px;
-	}
-	nav ul{
-		list-style: none;
-		margin: 0;
-		padding: 0;
-        border-radius: 20px;
-	}
-	nav ul li{
-		text-align: center;
-		float: left;
-		line-height: 60px;
-        border-radius: 20px;
-	}
-
-    
-    nav ul li a{
-		width: 100px;
-		color: #fff;
-		font-size: 20xp;
-		font-weight: 600;
-		display: block;
-	}
-	nav ul li a:hover,nav ul li a:visited{
-		text-decoration: none;
-		background: rgba(0,0,0,.5);
-		color: #fff;
-	}
-	.words{font-size: 40px;
-			letter-spacing: 10px;
-			position: absolute;
-			top:50%;
-			left: 30%;}
-	.imgw{position: relative;}
 
 </style>
+
 <head>
-    <title>主页</title>
+    <title>XU星云</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bg.css">
+
 </head>
 <body>
-    <div>
-    <nav>
-		<ul>
-			<li class="active"><a href="index.html">首頁</a></li>
-            <li><a href="hub.html">仓库</a></li>
-            <li><a href="https://www.tiktok.com/@abohp_new?is_copy_url=1&is_from_webapp=v1&lang=zh-Hant-TW">tiktok</a></li>
-            <li><a href="https://www.douyin.com/user/MS4wLjABAAAAoqWg5Cj9CL5TZECxeyWX7hUQtKs6YHD2ksDvDo6JWop9RujRhKAV4VMXoequMxon?enter_from=recommend&enter_method=top_bar">抖音</a></li>
+    <div class="container">
+        <nav>
+          <ul>
+            <li><a href="jio/" style="text-decoration:none;">旧页面</a></li>
+            <li><a href="https://github.com/abo-nb" style="text-decoration:none;">github</a></li>
+            <!-- <li><a href="https://reurl.cc/YvRmXo" style="text-decoration:none;">作品库</a></li> -->
+            <li><a href="https://reurl.cc/GxLgxd" style="text-decoration:none;">tiktok</a></li>
+            <li><a href="https://reurl.cc/YvRmXo" style="text-decoration:none;">抖音</a></li>
             
-		</ul>
-	</nav>
-    </div>
-
-    <div class="bg"></div>
-    <div class="main">
+          </ul>
+        </nav>
+      </div>
+      <div class="main">
 		<h1>欢迎来到xu星云</h1>
         <h2>不定期发布内容</h2>
-        <input class="bu" value="前往作品库"  style="width:150px;height:40px;font-size:20px type="button" onclick="location.href='hub.html'">
-        <input class="bu2" value="前往旧页面"  style="width:150px;height:40px; type="button" onclick="location.href='jio/'">
+        
 	</div>
+
 </body>
