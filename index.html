@@ -68,7 +68,7 @@ text-decoration:none;
     <link rel="stylesheet" href="bg.css">
 
 </head>
-<body>
+<body onload="update()">
     <div class="container">
         <nav>
           <ul>
@@ -85,7 +85,22 @@ text-decoration:none;
 		<h1>欢迎来到xu星云</h1>
         <h2>不定期发布内容</h2>
 	      <h5>页面版本v1.0</h5>
-        
+          <h6 id="visits">访问次数：</h6>
 	</div>
+<script>
+    function update(){
+        var link = "https://api.countapi.xyz/update/dyabo/114514/?amount=1";
+        fetch(link)
+        .then((response) => {
+            return response.json();
+        })
+        .then((Date) =>{
+document.getElementById('visits').innerHTML = "访问次数：" +  Date.value ;
+        })
+        
+
+    }
+</script>
+
 
 </body>
