@@ -1,0 +1,104 @@
+
+  nav {
+    background: rgba(255, 255, 255, 0.192);
+    border-radius: 70px;
+    padding: 0.5px;
+    box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.4);
+    text-align:center
+  }
+  nav ul li {
+    list-style: none;
+    display:inline;
+    padding: 13px 35px;
+    margin: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    transition: color 0.5s;
+  }
+  nav ul li::after {
+    content: '';
+    background: #006eff;
+    width: 100%;
+    height: 100%;
+    border-radius: 70px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    opacity: 0;
+    transition: top 0.3s,opacity 0.3s;
+  }
+  nav ul li:hover{
+    color: #fff;
+  }
+  nav ul li:hover::after{
+    top: 50%;
+    opacity: 1;
+  }
+
+
+  body
+  {
+   background: linear-gradient(125deg,#2c3e50,#27ae60,#2980b9,#e74c3c,#8e44ad);
+       /* 初始化 取消内外边距 */
+      margin: 0;
+      padding: 0;
+      /* 100%窗口高度 */
+      height: 100vh;
+      /* 弹性布局 水平垂直居中 */
+  
+      /* 渐变背景 */
+      background: linear-gradient(125deg,#2c3e50,#27ae60,#2980b9,#e74c3c,#8e44ad);
+      /* 指定背景图像的大小 */
+      background-size: 500%;
+      /* 执行动画：动画名 时长 线性的 无限次播放 */
+      animation: bgAnimation 15s linear infinite;
+   
+  }
+  
+  @keyframes bgAnimation {
+      0%{
+          background-position: 0% 50%;
+      }
+      50%{
+          background-position: 100% 50%;
+      }
+      100%{
+          background-position: 0% 50%;
+      }
+  }
+  
+  .main{
+    text-align: center; /*让div内部文字居中*/
+    width: 300px;
+    height: 100px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+  a:link { 
+  color:#000000; 
+  text-decoration:underline; 
+  } 
+  a:visited { 
+  color:#000000; 
+  text-decoration:none; 
+  } 
+  a:hover { 
+  color:#000000; 
+  text-decoration:none; 
+  } 
+  a:active { 
+  color:#000000; 
+  text-decoration:none; 
+  }
+  
